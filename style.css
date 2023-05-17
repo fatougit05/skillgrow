@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;0,800;1,500;1,600;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+
+body {
+    background-color:#151515;
+}
+
+p {
+    line-height: 1.5 ;
+    font: size 16px ;
+ }
+ li{
+list-style-type: none;
+
+ }
+
+ h1 , h2 , h3 , h4 , p {
+    color: white;
+ }
+h1 {
+    font-size: 40px;
+    padding-top: 85px;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+
+    align-items: center;
+}
+
+.nav__link--list{
+    display: flex;
+    margin-left: 34px;
+    
+}
+
+.nav__link--anchor{
+    margin: 0 12px ;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.entete--one{
+    width: 100%;
+    max-width: 300px;
+    position: absolute;
+    right: 24px;
+border-radius: 100%;
+top: 360px;
+}
+
+.entete--two{
+    width: 100%;
+    max-width: 500px;
+    position: absolute;
+    left: 24px;
+}
+
+
+
+.wave__img {
+   width: 100%;
+   max-width: 1600px;
+   height: 150px;
+   padding-top: 24px;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+.header--button{
+    margin-top: 24px;
+    width: 300px;
+    font-size: 18px;
+    height: 60px;
+    border-radius: 24px;
+    border: none;
+    background-color: rgb(0, 255, 204);
+margin-left: 72px;
+    color: black;
+   cursor: pointer;
+transition: all 250ms ease;
+}
+.fa-play{
+    color: azure;
+    border: 1px solid white;
+    padding:10px;
+border-radius: 50%; 
+   margin-right: 8px;
+}
+
+.header--button:hover{
+color: rgb(24, 152, 127);
+background-color: grey;
+}
+input {
+    
+    background-color: #151515;
+    border: none;
+}
+
+.play--button{
+margin-right: 12px;
+    color: white;
+    padding: 12px;
+   border-radius: 50%;
+    display: inline;
+    font-size: 18px;
+cursor: pointer;
+transition: all 250ms ease;
+}
+
+.play--button:hover{
+color: rgb(24, 152, 127);
+border: 1.3px solid rgb(24, 152, 127);
+}
+.main--header{
+    padding-left: 54px;
+}
+
+
+
+#reviews{
+    border: none;
+    height: 100vh;
+    background: white;
+}
+
+.wave__img--black{
+    width: 100%;
+    max-width: 1600px;
+    height: 150px;
+  
+    filter: invert(0.92);
+}
+
+.review--header{
+    color: black;
+    text-align: center;
+}
+
+.green--text{
+    color: rgb(0, 255, 204);
+    transition: all 250ms ease;
+}
+
+.green--text:hover{
+    color: grey;
+}
+
+.review--header {
+    padding-top: 24px;
+    font-size: 32px;
+}
+
+#statistics{
+    height: 70vh;
+    background-color: #151515;
+}
+
+.statistic--column{
+    text-align: center;
+    
+   
+    transition: all 0.7s linear;
+}
+
+.counter-numbers{
+    font-size: 40px;
+    color: rgb(0, 255, 204);
+}
+
+.statistic--column p {
+    color: white;
+}
+
+.statistic--container{
+    display: flex;
+justify-content: space-around;
+padding-top: 144px;
+}
+
+
+
+.overlay__wave{
+    width: 100%;
+height: 300px;
+
+    filter: invert(1);
+    filter: brightness(-10);
+}
+
+.statistic--icon {
+    text-align: center;
+    font-size: 28px;
+    color: rgb(0, 255, 204);
+    border: none;
+}
+
+.overlay__wave--invert{
+    width: 100%;
+    height: 300px;
+position: absolute;    
+bottom: 100px;
+filter: invert(1);
+        filter: brightness(-10);
+        transform: scaleX(-1);
+}
+
+
+.img__wave--backwards{
+    width: 100%;
+    max-width: 1600px;
+    height: 150px;
+  margin-top:320px;
+    filter: invert(0.92);
+transform: scaleY(-1)
+;}
+
+.nav__logo{
+    width: 100%;
+    max-width: 60px;
+    
+      
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo--title{
+   margin-left: 12px;
+   cursor: pointer;
+}
+
+.logo--animation{
+    width: 128px;
+animation: rotate-logo infinite 3000ms linear ;
+position: absolute;
+right: 90px;
+top: 220px;
+}
+
+@keyframes rotate-logo {
+
+    0%{
+opacity: 0.6;
+filter: invert(1);
+transform: rotate(0);
+    }
+
+    50% {
+
+        opacity: 1;
+filter: invert(0.4); 
+filter: brightness(0);
+}
+
+    100%{
+        filter: invert(0); 
+filter: brightness(0.6);
+transform: rotate(360deg);
+    }
+
+}
+
+#login {
+
+    height: 100vh;
+    background-color:rgb(0, 255, 204);
+}
+
+.wave__img--white{
+    width: 100%;
+    max-width: 1600px;
+    height: 150px;
+margin-top: 281px;
+}
+
+.login__img{
+   width: 100%;
+   max-width: 300px;
+   margin-bottom: 52px;
+   margin-left: 32px;
+}
+
+.login__img--wrapper{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+
+.blue--wave{
+    width: 100%;
+    max-width: 1600px;
+    height: 150px;
+margin-top: 64px;
+    filter: invert(0.5);
+   
+
+}
+
+.shape__round{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(0, 255, 204);
+    border-radius: 50%;
+    opacity: 0.5;
+    box-shadow: 5px grey;
+    position: absolute;
+    margin-bottom: 24px;
+    left: 295px;
+}
+
+.shape__round2{
+    height: 80px;
+    width: 80px;
+    background-color:rgb(0, 255, 204);
+    border-radius: 50%;
+    opacity: 0.4;
+    box-shadow: 5px grey;
+    position: absolute;
+    margin-bottom: 24px;
+    left: 145px;
+}
+
+.wave__review {
+opacity: 0.4;
+width: 100%;
+max-width: 1600px;
+height: 150px;
+filter: invert(0.1) contrast(1);
+position: absolute;
+
+}
+
+.content {
+  width: 40%;
+}
+.card  .image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.card ::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: rgb(0, 255, 204);
+  
+    clip-path: circle(55% at 0 0);
+    border-top-left-radius: 10px;
+}
+
+.card  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border:  3px solid rgb(24, 152, 127);
+}
+
+.card {
+    position: relative;
+border: 3px solid rgb(0, 255, 204);
+border-radius: 20px;
+}
+
+.card  .card-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.paragraph{
+    text-align: center;
+    color: black;
+}
+
+ .name-profession  .profession {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(0, 255, 204);
+ } 
+
+ .name--lo{
+    color: black;
+ }
+
+ .swiper {
+    width: 950px;
+ }
+
+ .course {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 32px;
+    height: 220px;
+    width: 300px;
+    border-radius: 25px;
+    background-color: white;
+ }
+
+ .course--img{
+
+margin-bottom: 110px;
+position: relative;
+    width: 100%;
+    max-width: 300px;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+
+transition: all 250ms ease;
+cursor: pointer;
+z-index: 10px;
+ }
+
+ .start--lesson{
+
+   position: relative;
+   bottom: 320px;
+    text-align: center;
+    display: none;
+ }
+
+
+ .course--container{
+    display: flex;
+    justify-content: center;
+ }
+
+ .course--img:hover  {
+    filter: grayscale(0.5) blur(2px);
+  
+ }
+
+ 
+
+ .course--img:hover + .start--lesson {
+
+display: block;
+}
+
+ .numbers{
+    display: flex;
+    font-size: 12px;
+    color: rgb(72, 71, 71);
+    position: relative;
+    bottom: 242px;
+    padding: 6px;
+    justify-content: space-between;
+ }
+
+ .course--name{
+    font-size: 400;
+    text-align: center;
+    position: relative;
+    bottom: 224px;
+ }
+
+ .course--instructor{
+    text-align: center;
+    position: relative;
+    bottom: 180px;
+    font-weight: 600;
+    color: rgb(0, 255, 204);
+ }
+
+ .courses--header{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 140px;
+    padding-bottom: 24px;
+ }
+
+ .popular--header{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 140px;
+    padding-bottom: 24px;
+   
+
+ }
+
+
+  .statistic--para{
+    color: white;
+    text-align: center;
+    padding-top: 24px;
+  }
+
+  .overlay__wave{
+   position: absolute;
+  }
+
+  .login__button {
+    color: white;
+   height: 55px;
+    border-radius: 25px;
+    background-color: #151515;
+    text-align: center;
+    width: 200px;
+    font-size: 18px;
+    margin-bottom: 32px;
+    cursor: pointer;
+    transition: all 250ms ease;
+     border: none;
+  }
+
+  .login__button:hover {
+    background-color: rgb(24, 152, 127);
+    color: black;
+  }
+
+  footer{
+    height: 40vh;
+    margin-top: 24px;
+  }
+
+  .footer__link--list{
+    display: flex;
+   justify-content: space-around;
+    align-items: center;
+    margin-top: 64px;
+}
+
+hr {
+    width: 100%;
+   margin: 0 auto;
+    color: grey;
+    margin-top: 72px;
+    opacity: 0.6;
+}
+
+.copyrights{
+    color: white;
+    padding-top: 24px;
+    font-size: 12px;
+}
+
+#landing--login{
+    background-color: #151515;
+    height: 100vh;
+}
